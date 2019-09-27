@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Mastermind
+namespace Mastermind.Validation
 {
   public static class GuessValidator
   {

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Security.Cryptography.X509Certificates;
-
-namespace Mastermind
+﻿namespace Mastermind.Validation
 {
   public class GuessValidation
   {

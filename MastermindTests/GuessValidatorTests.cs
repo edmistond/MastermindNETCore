@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Mastermind;
+using Mastermind.Validation;
 using Moq;
 using NUnit.Framework;
 

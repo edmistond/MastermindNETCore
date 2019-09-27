@@ -31,8 +31,7 @@ namespace Mastermind
       }
       else
       {
-        // TODO: fix this, i don't like exceptions for flow control
-        throw new Exception("The game is over -- too many attempts!");
+        throw new GameException("The game is over -- too many attempts!");
       }
     }
 
