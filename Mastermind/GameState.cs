@@ -5,7 +5,7 @@ namespace Mastermind
 {
   public class GameState : IGameState
   {
-    private int Attempts { get; set; }
+    public int Attempts { get; private set; }
     public List<int> Numbers { get; private set; }
 
     public GameState()

@@ -86,6 +86,17 @@ namespace MastermindTests
       Assert.AreEqual("--", validation.GuessResult);
     }
 
+    [Test]
+    public void AdditionalTestCases()
+    {
+      var stateMock = GameStateMockBuilder(new int[] { 3, 1, 1, 1 });
+      var guess = new List<int> { 1, 1, 2, 2 };
+
+      Assert.AreEqual("--", GuessValidator.Validate(stateMock.Object, guess).GuessResult);
+    }
+
+
+    #region mock builder
     // Quick helper method since I'm writing the same game state mocks a bunch
     private Mock<IGameState> GameStateMockBuilder(int[] generated)
     {
@@ -94,5 +105,7 @@ namespace MastermindTests
 
       return stateMock;
     }
+    #endregion
+
   }
 }

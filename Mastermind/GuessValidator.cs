@@ -8,7 +8,7 @@ namespace Mastermind
   {
     private const string VictoryString = "++++";
 
-    public static GuessValidation Validate(IGameState state, List<int> guess) {
+    public static GuessValidation Validate(IGameState state, IEnumerable<int> guess) {
       // Victory condition; guess and generated both match exactly. We can stop right here.
       // Technically, we don't need to do this and if it was a longer/more complex string
       // where performance is critical, I probably wouldn't. I think it simplifies the
@@ -31,7 +31,7 @@ namespace Mastermind
 
       var statusString = "";
 
-      for (int i = 0; i < guess.Count; i++)
+      for (int i = 0; i < guess.Count(); i++)
       {
         var digit = guess.ElementAt(i);
 
