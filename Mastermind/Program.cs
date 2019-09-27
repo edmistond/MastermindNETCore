@@ -22,7 +22,7 @@ namespace Mastermind
       if (args.Length > 0 && args[0].ToLower() == DebugFlag)
       {
         debug = true;
-        Console.WriteLine($"DEBUGGING ENABLED - the digits I'm thinking of are {string.Join("", state.Numbers)}");
+        Console.WriteLine($"DEBUGGING ENABLED - the digits I'm thinking of are {string.Join("", state.Numbers)}\n\n");
       }
 
       Console.WriteLine("I am thinking of a number. Can you guess what it is?");
